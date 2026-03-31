@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ✅ Correct: Use only :root (remove @theme completely) */
+
+:root {
+  --background: 255 255 255;
+  --foreground: 15 23 42;
+  --muted: 241 245 249;
+  --muted-foreground: 100 116 139;
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+  --primary: 99 102 241;
+  --primary-foreground: 255 255 255;
+  --accent: 139 92 246;
+  --border: 226 232 240;
+}
+
+.dark {
+  --background: 15 23 42;
+  --foreground: 248 250 252;
+  --muted: 30 41 59;
+  --muted-foreground: 148 163 184;
+  --card: 30 41 59;
+  --card-foreground: 248 250 252;
+  --primary: 129 140 248;
+  --primary-foreground: 15 23 42;
+  --accent: 167 139 250;
+  --border: 51 65 85;
+}
+
+/* Base styles */
+* {
+  border-color: rgb(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Selection */
+::selection {
+  background-color: rgb(var(--primary));
+  color: rgb(var(--primary-foreground));
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Glass effect */
+.glass {
+  background-color: rgb(var(--card) / 0.8);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgb(var(--border));
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--primary));
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(var(--accent));
+}
