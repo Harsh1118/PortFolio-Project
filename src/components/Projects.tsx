@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: 'Bhagwad Geeta Chatbot',
     description: 'A spiritual AI chatbot inspired by the Bhagavad Gita, providing meaningful guidance, real-time responses, and insightful answers to life’s questions.',
-    image: 'https://github.com/Harsh1118/Bhagwad-Geeta-Chat-Bot/blob/main/81k974mPmwL.jpg',
+    image: 'https://vedicglobal.org/wp-content/uploads/2020/07/Bhagavad-Gita-Image-of-Sri-Krishna-and-Arjuna.jpg',
     tags: ['JavaScript', 'HTML', 'CSS', 'Google Documentation'],
     category: 'Full Stack',
     liveUrl: '#',
