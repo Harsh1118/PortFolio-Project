@@ -69,7 +69,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[rgb(var(--muted-foreground))]">
-          <p>© {currentYear} Alex Chen. All rights reserved.</p>
+          <p>© {currentYear} Harsh Dubey. All rights reserved.</p>
           <p>
             Designed & Built with{' '}
             <span className="text-red-500">❤</span> using React, Vite, TypeScript
