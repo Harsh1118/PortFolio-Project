@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex gap-4">
-            {['github', 'linkedin', 'twitter'].map((social) => (
+            {['github', 'linkedin'].map((social) => (
               <motion.a
                 key={social}
                 href={`https://${social}.com`}
